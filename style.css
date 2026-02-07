@@ -1,0 +1,95 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* BODY */
+html, body {
+  width: 100%;
+  height: 100%;
+  background-image: url(img.jpg);
+  font-family: Arial, sans-serif;
+}
+
+/* HALAMAN */
+.name-page {
+  width: 100%;
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  text-align: center;
+  color: white;
+}
+
+/* CONTAINER */
+.container {
+  width: 90%;
+  max-width: 420px;
+}
+
+/* NAMA */
+.greetings {
+  font-size: clamp(28px, 7vw, 44px);
+  font-weight: 800;
+  letter-spacing: 3px;
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: centet;
+}
+
+/* HURUF */
+.greetings span {
+  opacity: 0.3;
+  transition: 0.3s ease;
+  margin: 0 3px;
+}
+.space {
+  width: 15px;
+}
+
+/* HURUF AKTIF */
+.greetings span.active {
+  opacity: 1;
+  color: white;
+
+  text-shadow:
+    0 0 8px cyan,
+    0 0 18px red,
+    0 0 35px yellow;
+}
+
+/* TEKS */
+p {
+  font-size: clamp(14px, 3.5vw, 18px);
+  opacity: 0.9;
+}
+
+/* TOMBOL */
+button {
+  margin-top: 25px;
+  padding: 10px 22px;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  border: none;
+  border-radius: 20px;
+
+  background: hotpink;
+  color: white;
+
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
